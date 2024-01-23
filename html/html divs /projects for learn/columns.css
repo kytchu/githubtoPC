@@ -1,0 +1,27 @@
+.columns-pictures{
+    columns: 3 100px;
+    column-rule: 1px solid black;
+    
+}
+
+.container-box{
+    width: 80%;
+    height: 400px;
+    background-color: rgb(212, 185, 212);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px auto;
+}
+
+img{
+
+    width: auto;
+    height: 200px;
+    border-radius: 30px;
+
+}
+
+.columns-pictures p{
+    margin-top: 0px;
+
+}

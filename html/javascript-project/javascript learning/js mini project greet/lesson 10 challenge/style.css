@@ -1,0 +1,50 @@
+.amazon-style{
+    background-color: rgb(255, 216, 20);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 10px 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.request-button{
+    background: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#later-button{
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+
+.button-style-gaming{
+    background-color: rgb(230, 230, 230);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.is-toggled{
+    background: black;
+    color: whitesmoke;
+}
+
+.is-toggled-two{
+    background: rgb(42, 41, 41);
+    color: whitesmoke;
+}

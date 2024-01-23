@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 10 project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- amazon button -->
+    <button class="amazon-style">Add to cart</button><br>
+    <!--uber button-->
+    <button class="request-button" >Request now</button> 
+    <button class="request-button" id="later-button">Schedule for later</button><br>
+    <!-- Checking for a class -->
+    <button class="js-button" onclick="checkClass();">Test</button><br>
+    <!-- button on and off -->
+    <button class="js-button-two button-style-gaming" onclick="switchButton();">Gaming</button><br>
+    <!-- three buttons on and off -->
+    <button class="js-button-three button-style-gaming" onclick="threeButton('.js-button-three');">One</button>
+    <button class="js-button-four button-style-gaming" onclick="threeButton('.js-button-four');">Two</button>
+    <button class="js-button-five button-style-gaming" onclick="threeButton('.js-button-five');">Three</button><br>
+    <!-- button parallel switch -->
+    <button class="button-js-one button-style-gaming" onclick="buttonCheck('.button-js-one');">reimu</button>
+    <button class="button-js-two button-style-gaming" onclick="buttonCheck('.button-js-two');">cirno</button>
+    <button class="button-js-yum button-style-gaming" onclick="buttonCheck('.button-js-yum');">youmu</button>
+    <script src="index.js"></script>
+</body>
+</html>

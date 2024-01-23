@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenges html</title>
+    <style>
+        body{
+            
+            height: 150vh;
+            box-sizing: border-box;
+        }
+
+        .button-tag{
+            padding: 10px 15px 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .button-style{
+            background-color: black;
+            box-shadow: 2px 2px black;
+            color: rgb(209, 216, 216);     
+            transition: 1000ms;   
+
+        }
+        input{
+            width: 100px;
+            height: 25px;
+        }
+        .calculate-style{
+            background-color: greenyellow;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            padding: 5px 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <button onclick="buttoncl();">9a</button>
+    <button onclick="onclickOfB();" class="buttonB">9b</button><br>
+    <button onclick="headsButton();">Heads</button>
+    <button onclick="tailsButton();">Tails</button>
+    <P class="headsOrTails"></P>
+    
+    <input type="text" placeholder="name" class="submitName" onkeydown="enterEvent(event);">
+    <button onclick="buttonSbmt();" class="calculate-style">submit</button><br>
+    <p class="submitNamePrint"></p>
+
+    <button class="button-tag" onclick="buttonTechnique();">press this button</button>
+
+    <script>
+
+        function buttonTechnique(){
+
+            const buttonColor = document.querySelector(".button-tag");
+
+            if (buttonColor.innerHTML === "press this button") {
+                buttonColor.innerHTML = "button pressed";
+                buttonColor.classList.add("button-style");
+            } else {
+                buttonColor.innerHTML = "press this button";
+                buttonColor.classList.remove("button-style");
+n            }
+
+        }
+
+        function enterEvent(event){
+            if(event.key === 'Enter'){
+                buttonSbmt();
+            }
+        }
+
+        function buttoncl(){
+            console.log(document.querySelector('button'));
+        }
+
+        function onclickOfB(){
+            const buttonBclk = document.querySelector('.buttonB');
+            
+            if(buttonBclk.innerText === '9b'){
+                buttonBclk.innerHTML = '9b done';
+            } else {
+                buttonBclk.innerHTML = '9b';
+            }
+        }
+
+        function headsButton(){
+            document.querySelector('.headsOrTails').innerHTML = 'You chose: heads';
+        }
+        function tailsButton(){
+            document.querySelector('.headsOrTails').innerHTML = 'You chose: tails';
+
+        }        
+
+        function buttonSbmt(){
+            const name = document.querySelector('.submitName');
+            let nameINput = name.value;
+            console.log(nameINput);
+
+            document.querySelector('.submitNamePrint').innerHTML = `hello ${name.value}`;
+        }
+    </script>
+</body>
+</html>

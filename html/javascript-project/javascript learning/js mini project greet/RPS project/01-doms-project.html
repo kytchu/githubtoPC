@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-DOM-project</title>
+    <style>
+        :root  {
+            --background: white;
+            --color: #2b2b2b;
+        
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--background);
+            color: var(--color);
+        }
+        .darkmode{
+            background-color: var(--color);
+            color: var(--background);
+        }
+        input{
+            color: gray;
+        }
+    </style>
+</head>
+<body >
+    <p>darkmode button</p>
+    <button class="JS-darkmode-button" onclick="onClickButton();">lightmode</button>
+    <br>
+    <br>
+    <p>
+       Amazon shipping
+       <br>
+       Orders undeer $40 = + $10 shipping
+       <br>
+       Orders over $40 = free shipping
+    </p>
+    <input placeholder="enter the cost" class="js-cost" 
+    onkeydown="handleCostKey(event);">
+    <button onClick="submitTotal();">submit</button><br>
+    <p class="js-total">here is your total:</p>
+    
+    <input type="text" onkeyup="updatingPTag(event);" class="js-input-value">
+    <p class="updateText"></p>
+    
+    <script>
+
+    function updatingPTag(event){
+        const inputVal = document.querySelector(".js-input-value");
+        document.querySelector(".updateText").innerHTML = inputVal.value;
+    }
+    
+    function handleCostKey(event){
+        if (event.key === 'Enter') {
+            submitTotal();
+        }
+    }
+    function submitTotal(){
+        const inputMoney = document.querySelector(".js-cost");
+        let cost = Number(inputMoney.value) * 100;
+        if (cost < 4000) {
+            cost = cost + 1000;
+        } 
+        if (!cost){
+            console.log("this is a string pls fix");
+        }
+        document.querySelector(".js-total").innerHTML = `here is your total: ${cost / 100}`;
+    }
+
+
+
+
+    // selector       
+    const darkmodeButton = document.querySelector(".JS-darkmode-button");
+    // state
+    const theme = localStorage.getItem ('theme');
+    // on mount
+    theme && document.body.classList.add ('darkmode');
+    // handler function
+    handleThemeToggle = () => {
+        document.body.classList.toggle('darkmode');
+        if (document.body.classList.contains('darkmode')){
+            localStorage.setItem ('theme', 'darkmode');
+        } else {
+            localStorage.removeItem('theme');
+        }
+    }
+    //
+    darkmodeButton.addEventListener ('click', handleThemeToggle);
+    
+    
+    function onClickButton(){
+        const buttonSaveSetting = localStorage.getItem('buttonSave');
+        if (darkmodeButton.innerHTML === 'lightmode') {
+            darkmodeButton.innerHTML = 'darkmode';
+            localStorage.setItem('buttonSave', 'darkmode');
+        } else {
+            darkmodeButton.innerHTML = 'lightmode';
+            localStorage.removeItem('buttonSave')
+        }
+    }
+    
+    
+    </script>
+</body>
+</html>

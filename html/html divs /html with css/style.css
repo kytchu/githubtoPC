@@ -1,0 +1,157 @@
+.image-custom{
+    width: 20rem;
+    border-radius: 10px;
+    border: solid 3px;
+}
+
+.box-style{
+    background-image: linear-gradient(to bottom right, rgb(100, 100, 109),rgb(162, 159, 182));
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 4px;
+    text-shadow: 1px 2px rgb(129, 129, 156);
+    color: rgb(223, 234, 243);
+    width: auto;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+
+}
+
+.box-align-style{
+    background-image: linear-gradient(to bottom right, rgb(123, 123, 148),rgb(46, 45, 51));
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 4px;
+    text-shadow: 1px 2px rgb(129, 129, 156);
+    color: rgb(223, 234, 243);
+    width: 10rem;
+    height: 2rem;
+    text-align: center;
+    margin-inline: auto;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+
+.top-nav-style{
+    gap: 20%;
+    width: auto;
+    background-image: linear-gradient(to bottom right, rgb(174, 174, 202),rgb(184, 179, 206));
+    border-radius: 10px;
+    margin: 10px;
+    padding: 4px;
+    text-shadow: 1px 2px rgb(129, 129, 156);
+    color: rgb(223, 234, 243);
+    border: 3px solid;
+    margin-right: 5px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+h2:hover{
+    color: aqua;
+    text-shadow: 1px 2px rgb(78, 97, 96);
+
+}
+
+ul{ 
+    display: flex;
+    justify-content: flex-start;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+
+#a{
+    text-decoration: none;
+    color: rgb(223, 234, 243);
+
+}
+
+#gradient{
+    border: 1px solid;
+    margin: 2% auto;
+    padding: 2rem;
+    background-image: linear-gradient(to bottom right, aliceblue, rgb(150, 150, 190));
+    width: 50%;
+    border-radius: 10px;
+
+}
+
+ld:nth-child(2){
+    color: rgb(50, 129, 102);
+
+}
+link:hover{
+    color: black;
+}
+
+.div-center{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#ul-list{
+    background-image: linear-gradient(to bottom right, rgb(135, 150, 162), rgb(89, 89, 109));
+    width: 100px;
+    display: inline-block;
+    border: 1px solid;
+}
+
+#content-fit{
+
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+
+}
+
+#href-link:link {
+    color: #00438a;
+
+}
+
+#href-link:visited{
+
+    color: bisque;
+
+
+}
+
+img{
+    
+    max-width: 100%;
+
+
+
+}
+
+a{
+    align-items: center;
+    text-align: center;
+
+}
+
+button{
+    align-items: center;
+    text-align: center;
+    display: flex;
+}

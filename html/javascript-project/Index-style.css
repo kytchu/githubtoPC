@@ -1,0 +1,119 @@
+*{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(241, 238, 234);
+
+
+    
+}
+body{
+    background-image: url(https://512pixels.net/downloads/macos-wallpapers-thumbs/10-14-Night-Thumb.jpg);
+    background-size: 100%;
+    height: 99vh;
+}
+
+.nav-section-flex a{
+    color: rgb(241, 238, 234);
+    text-decoration: underline 0.15em rgba(0, 0, 0, 1);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+.nav-section-flex a:hover {
+    color: rgb(241, 238, 234);
+    cursor:pointer;  
+    text-decoration-color: rgb(214, 214, 222);
+    text-underline-offset: 0.4em;
+}
+.nav-section-flex{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    background-color:inherit;
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 400;
+
+}
+
+
+
+
+#margin-nav-right{
+
+    margin-right: 20px;
+
+
+}
+
+#darkmode-icon{
+    display: block;
+    cursor: pointer;
+    overflow: none;
+    background-color: transparent;
+    border: none;
+    color: rgb(241, 238, 234);
+    font-size: 16px;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 1);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+
+}
+
+#darkmode-icon:hover{
+
+    text-decoration-color: rgb(214, 214, 222);
+    text-underline-offset: 0.4em;
+
+}
+
+.wrapper-flex{
+    display: flex;
+    position: relative;
+
+}
+
+.wrapper-flex .sidebar{
+    position: fixed;
+    width: 10rem;
+    max-width: 10rem;
+    height: 100%;
+    background-color: rgb(53, 62, 71);
+    background-image: linear-gradient();
+    background: linear-gradient(#434158, #262836);
+    color: black;
+    font-size: 20px;
+    padding: 20px 0;
+    border-right: 2px solid black;
+
+}
+
+.wrapper-flex .sidebar ul li {
+    color: rgb(213, 213, 213);
+    opacity: 1;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+
+
+
+
+}
+
+#sidebar-title-header{
+    color: rgb(213, 213, 213);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px ;
+
+}
+
+
